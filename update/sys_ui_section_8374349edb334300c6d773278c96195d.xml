@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Details" section_id="8374349edb334300c6d773278c96195d" sys_domain="global" table="x_184790_vrealize_vrealize_catalog_details" version="3" view="sc_cat_item_designer">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-23 15:44:57</sys_created_on>
+            <sys_id>4f74349edb334300c6d773278c96195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details" display_value="Details" name="x_184790_vrealize_vrealize_catalog_details" sys_domain="global" view="f5a795fceb3211003623666cd206fe19">8374349edb334300c6d773278c96195d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-23 15:44:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>availability</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-23 15:44:57</sys_created_on>
+            <sys_id>cf74349edb334300c6d773278c96195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details" display_value="Details" name="x_184790_vrealize_vrealize_catalog_details" sys_domain="global" view="f5a795fceb3211003623666cd206fe19">8374349edb334300c6d773278c96195d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-23 15:44:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sc_catalogs</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-23 15:44:57</sys_created_on>
+            <sys_id>4374349edb334300c6d773278c96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details" display_value="Details" name="x_184790_vrealize_vrealize_catalog_details" sys_domain="global" view="f5a795fceb3211003623666cd206fe19">8374349edb334300c6d773278c96195d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-23 15:44:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-23 15:44:57</sys_created_on>
+            <sys_id>c374349edb334300c6d773278c96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details" display_value="Details" name="x_184790_vrealize_vrealize_catalog_details" sys_domain="global" view="f5a795fceb3211003623666cd206fe19">8374349edb334300c6d773278c96195d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-23 15:44:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-23 15:44:57</sys_created_on>
+            <sys_id>4774349edb334300c6d773278c96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details" display_value="Details" name="x_184790_vrealize_vrealize_catalog_details" sys_domain="global" view="f5a795fceb3211003623666cd206fe19">8374349edb334300c6d773278c96195d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-23 15:44:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>picture</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-23 15:44:57</sys_created_on>
+            <sys_id>c774349edb334300c6d773278c96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details" display_value="Details" name="x_184790_vrealize_vrealize_catalog_details" sys_domain="global" view="f5a795fceb3211003623666cd206fe19">8374349edb334300c6d773278c96195d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-23 15:44:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mobile_picture</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-23 15:44:57</sys_created_on>
+            <sys_id>4b74349edb334300c6d773278c96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details" display_value="Details" name="x_184790_vrealize_vrealize_catalog_details" sys_domain="global" view="f5a795fceb3211003623666cd206fe19">8374349edb334300c6d773278c96195d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-23 15:44:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-23 15:44:57</sys_created_on>
+            <sys_id>cb74349edb334300c6d773278c96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details" display_value="Details" name="x_184790_vrealize_vrealize_catalog_details" sys_domain="global" view="f5a795fceb3211003623666cd206fe19">8374349edb334300c6d773278c96195d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-23 15:44:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Details</caption>
+            <header>false</header>
+            <name>x_184790_vrealize_vrealize_catalog_details</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-23 15:44:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8374349edb334300c6d773278c96195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Details</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="vrealize-automation-servicenow-plugin-3-0" source="x_184790_vrealize">7345ec9adb7f0300c6d773278c961918</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="vrealize-automation-servicenow-plugin-3-0">7345ec9adb7f0300c6d773278c961918</sys_scope>
+            <sys_update_name>sys_ui_section_8374349edb334300c6d773278c96195d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-23 15:44:57</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Item Designer" name="sc_cat_item_designer">f5a795fceb3211003623666cd206fe19</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

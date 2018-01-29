@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description>This REST message is placed to authenticate user with vRA instance.</description>
+        <name>vRealize Authentication</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>https://vra-01a.corp.local/</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-24 08:42:28</sys_created_on>
+        <sys_id>1e945c26db730300c6d773278c9619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>vRealize Authentication</sys_name>
+        <sys_package display_value="vrealize-automation-servicenow-plugin-3-0" source="x_184790_vrealize">7345ec9adb7f0300c6d773278c961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vrealize-automation-servicenow-plugin-3-0">7345ec9adb7f0300c6d773278c961918</sys_scope>
+        <sys_update_name>sys_rest_message_1e945c26db730300c6d773278c9619c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-24 08:42:28</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sc_category" label="vRealize Instance Details" max_length="40" name="x_184790_vrealize_vrealize_instance_details" type="collection">
+        <element label="End Point" mandatory="true" max_length="40" name="end_point" type="string"/>
+        <element display="true" label="MID server" max_length="32" name="mid_server" reference="ecc_agent" type="reference"/>
+        <element label="vRealize Name" mandatory="true" max_length="40" name="vrealize_name" type="string"/>
+        <index name="index">
+            <element name="mid_server"/>
+        </index>
+    </element>
+</database>

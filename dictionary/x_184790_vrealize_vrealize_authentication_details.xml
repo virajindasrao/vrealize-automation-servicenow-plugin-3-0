@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="vRealize Authentication Details" max_length="40" name="x_184790_vrealize_vrealize_authentication_details" type="collection">
+        <element default="VMware1!" display="true" label="Password" mandatory="true" max_length="40" name="password" type="string"/>
+        <element default="vcorp.local" label="Tenant" mandatory="true" max_length="40" name="tenant" type="string"/>
+        <element default="jason" label="Username" mandatory="true" max_length="40" name="username" type="string"/>
+    </element>
+</database>
