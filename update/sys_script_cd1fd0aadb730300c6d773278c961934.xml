@@ -30,49 +30,47 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	try {
+	//try {
 		var r = new sn_ws.RESTMessageV2('x_184790_vrealize.vRealize Authentication', 'POST');
 		
 		var gr = new GlideRecord("x_184790_vrealize_vrealize_authentication_details");
 		gr.query();
 		gr.next();
 		
-		gs.info(current.vrealize_name);
-		
 		//r.setMIDServer(current.mid_server.name);
 		//r.setEccParameter('skip_sensor', true);
 		r.setEndpoint("http://demo6920974.mockable.io/catalog-listing");
-		
 		var requestBody = '{"username":"'+gr.getValue('username')+'","password":"'+gr.getValue('password')+'","tenant":"'+gr.getValue('tenant')+'"}';
-			gs.info("requestBody "+requestBody);
 			r.setRequestBody(requestBody);
-		
-			gs.info("requestBody2 "+requestBody);
 			var response = r.execute();
 			var responseBody = response.getBody();
 			var httpStatus = response.getStatusCode();
 			
-			gs.info("responseBody 123 "+responseBody);
-			gs.info("httpStatus 123 "+httpStatus);
-		}
-		catch(ex) {
-			gs.info("exception "+ex.getMessage());
-			var message = ex.getMessage();
-		}
-		
-	})(current, previous);
+				gs.info(current.vrealize_name);
+				var parsed = JSON.parse(responseBody);
+				gs.info(current.vrealize_name+"~"+parsed.content);
+				gs.info(current.vrealize_name+"~~"+parsed["content"]);
+				//  parse JSON string returned from request into a json object
 
-function AuthnticateUser(endpoint){
-	return true;
-}
-	]]></script>
+			//}
+			//catch(ex) {
+			//	gs.info("exception "+ex.getMessage());
+			//	var message = ex.getMessage();
+			//}
+			
+		})(current, previous);
+		
+		function AuthnticateUser(endpoint){
+			return true;
+		}
+		]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-01-24 08:55:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cd1fd0aadb730300c6d773278c961934</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_name>Authenticate vRealize User</sys_name>
         <sys_overrides/>
         <sys_package display_value="vrealize-automation-servicenow-plugin-3-0" source="x_184790_vrealize">7345ec9adb7f0300c6d773278c961918</sys_package>
@@ -80,9 +78,9 @@ function AuthnticateUser(endpoint){
         <sys_scope display_value="vrealize-automation-servicenow-plugin-3-0">7345ec9adb7f0300c6d773278c961918</sys_scope>
         <sys_update_name>sys_script_cd1fd0aadb730300c6d773278c961934</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-01-24 10:59:29</sys_updated_on>
+        <sys_updated_on>2018-01-30 12:34:27</sys_updated_on>
         <template/>
-        <when>async</when>
+        <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=cd1fd0aadb730300c6d773278c961934"/>
 </record_update>

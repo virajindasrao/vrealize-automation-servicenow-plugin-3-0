@@ -2,7 +2,7 @@
 <record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
         <sc_cat_item display_value="test catalog item">7ab4389edb334300c6d773278c96197c</sc_cat_item>
-        <sc_category display_value="Test Instance record 34">f6aea85adb334300c6d773278c9619b2</sc_category>
+        <sc_category display_value="Test Instance record 67">f6aea85adb334300c6d773278c9619b2</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-01-23 15:47:39</sys_created_on>
