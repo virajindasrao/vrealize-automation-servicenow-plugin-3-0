@@ -4,7 +4,7 @@
         <active>true</active>
         <application display_value="vRealize Automation">e1e82496db334300c6d773278c9619d6</application>
         <filter/>
-        <name>vRealize Instance Details s</name>
+        <name>vRealize Instance Details</name>
         <order/>
         <path/>
         <path_relative_to_root>false</path_relative_to_root>
@@ -15,14 +15,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1dfa6cd6db334300c6d773278c961942</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>vRealize Instance Details s</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>vRealize Instance Details</sys_name>
         <sys_package display_value="vrealize-automation-servicenow-plugin-3-0" source="x_184790_vrealize">7345ec9adb7f0300c6d773278c961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="vrealize-automation-servicenow-plugin-3-0">7345ec9adb7f0300c6d773278c961918</sys_scope>
         <sys_update_name>sys_ui_module_1dfa6cd6db334300c6d773278c961942</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-01-23 15:03:19</sys_updated_on>
+        <sys_updated_on>2018-02-06 05:15:11</sys_updated_on>
         <table>x_184790_vrealize_vrealize_instance_details</table>
         <uncancelable>false</uncancelable>
         <view_name/>

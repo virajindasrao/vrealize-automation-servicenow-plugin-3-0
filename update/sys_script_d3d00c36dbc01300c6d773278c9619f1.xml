@@ -12,14 +12,14 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_184790_vrealize_vrealize_instance_details</collection>
+        <collection>x_184790_vrealize_vrealize_authentication_details</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Authenticate vRealize Instance</name>
+        <name>Authenticate vRealize Instances</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,55 +29,55 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	var gr = new GlideRecord("x_184790_vrealize_vrealize_authentication_details");
+	var gr = new GlideRecord("x_184790_vrealize_vrealize_instance_details");
 	gr.query();
-	gr.next();
+	var user = current.username;
+	var passkey = current.password;
+	var tenant = current.tenant;
+	while(gr.next()){
+		gs.info("Details "+user+" "+passkey+" "+tenant+" "+gr.vrealize_name+" "+gr.end_point+" "+gr.mid_server.name);
+		var validate = checkCreds(user, passkey, tenant, gr.vrealize_name, gr.end_point, gr.mid_server.name);
+		if (validate == false){
+			current.username.setError("Entered credentials are not working for "+gr.vrealize_name);
+			current.setAbortAction(true);
+		} 
+	}
+})(current, previous);
 
+function checkCreds(user, passkey, tenant, vrealizeName, endPoint, mid_server){
 	var r = new sn_ws.RESTMessageV2('x_184790_vrealize.vRealize Authentication', 'POST');
-	var endPoint = current.end_point+"identity/api/tokens";
-	var requestBody = '{"username":"'+gr.getValue('username')+'","password":"'+gr.getValue('password')+'","tenant":"'+gr.getValue('tenant')+'"}';
+	endPoint = endPoint+"identity/api/tokens";
+	var requestBody = '{"username":"'+user+'","password":"'+passkey+'","tenant":"'+tenant+'"}';
 	
 	r.setEndpoint(endPoint);
-	r.setMIDServer(current.mid_server.name);
+	r.setMIDServer(mid_server);
 	r.setEccParameter('skip_sensor', true);
 	r.setRequestBody(requestBody);
-
-	gs.info(current.vrealize_name+" endpoint - "+r.getEndpoint());
-
 	var response = r.execute();
-	var responseBody = response.getBody();
 	var statusCode = response.getStatusCode();
 	
-	gs.info(current.vrealize_name+" statusCode - "+statusCode);
-	gs.info(current.vrealize_name+" responseBody - "+responseBody);
-	
 	if (statusCode != 200){
-		gs.info(current.vrealize_name+" status code is not 200 ");
-		current.end_point.setError("Global credentials not working for given endpoint");
-		current.setAbortAction(true);
-	}else{
-		var parsedResponse = JSON.parse(responseBody);
-		gs.info(current.vrealize_name+" id - "+parsedResponse.id);
-		current.token = parsedResponse.id;
+		return false;
 	}
-})(current, previous);]]></script>
+	return true;
+}]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-01-24 08:55:49</sys_created_on>
+        <sys_created_on>2018-02-06 11:35:02</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>cd1fd0aadb730300c6d773278c961934</sys_id>
-        <sys_mod_count>93</sys_mod_count>
-        <sys_name>Authenticate vRealize Instance</sys_name>
+        <sys_id>d3d00c36dbc01300c6d773278c9619f1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Authenticate vRealize Instances</sys_name>
         <sys_overrides/>
         <sys_package display_value="vrealize-automation-servicenow-plugin-3-0" source="x_184790_vrealize">7345ec9adb7f0300c6d773278c961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="vrealize-automation-servicenow-plugin-3-0">7345ec9adb7f0300c6d773278c961918</sys_scope>
-        <sys_update_name>sys_script_cd1fd0aadb730300c6d773278c961934</sys_update_name>
+        <sys_update_name>sys_script_d3d00c36dbc01300c6d773278c9619f1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-02-06 10:58:08</sys_updated_on>
+        <sys_updated_on>2018-02-06 11:59:45</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=cd1fd0aadb730300c6d773278c961934"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=d3d00c36dbc01300c6d773278c9619f1"/>
 </record_update>

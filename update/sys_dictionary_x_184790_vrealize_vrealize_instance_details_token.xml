@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="end_point" table="x_184790_vrealize_vrealize_instance_details">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="token" table="x_184790_vrealize_vrealize_instance_details">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -15,7 +15,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>End Point</column_label>
+        <column_label>Token</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -28,14 +28,14 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>end_point</element>
+        <element>token</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
-        <mandatory>true</mandatory>
-        <max_length>100</max_length>
+        <mandatory>false</mandatory>
+        <max_length>400</max_length>
         <name>x_184790_vrealize_vrealize_instance_details</name>
         <next_element/>
         <primary>false</primary>
@@ -53,16 +53,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-01-23 15:03:18</sys_created_on>
-        <sys_id>8bca24d6db334300c6d773278c9619a9</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>End Point</sys_name>
+        <sys_created_on>2018-02-01 06:20:11</sys_created_on>
+        <sys_id>3db80d0ddb401300c6d773278c961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Token</sys_name>
         <sys_package display_value="vrealize-automation-servicenow-plugin-3-0" source="x_184790_vrealize">7345ec9adb7f0300c6d773278c961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="vrealize-automation-servicenow-plugin-3-0">7345ec9adb7f0300c6d773278c961918</sys_scope>
-        <sys_update_name>sys_dictionary_x_184790_vrealize_vrealize_instance_details_end_point</sys_update_name>
+        <sys_update_name>sys_dictionary_x_184790_vrealize_vrealize_instance_details_token</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-02-06 07:37:07</sys_updated_on>
+        <sys_updated_on>2018-02-01 06:20:11</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

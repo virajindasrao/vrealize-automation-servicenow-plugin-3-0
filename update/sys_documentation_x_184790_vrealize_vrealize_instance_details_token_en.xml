@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="token" label="Token" language="en" table="x_184790_vrealize_vrealize_instance_details">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>token</element>
+            <help/>
+            <hint/>
+            <label>Token</label>
+            <language>en</language>
+            <name>x_184790_vrealize_vrealize_instance_details</name>
+            <plural>Tokens</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-02-01 06:20:12</sys_created_on>
+            <sys_id>8e89cd0ddb401300c6d773278c961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Token</sys_name>
+            <sys_package display_value="vrealize-automation-servicenow-plugin-3-0" source="x_184790_vrealize">7345ec9adb7f0300c6d773278c961918</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="vrealize-automation-servicenow-plugin-3-0">7345ec9adb7f0300c6d773278c961918</sys_scope>
+            <sys_update_name>sys_documentation_x_184790_vrealize_vrealize_instance_details_token_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-02-01 06:20:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
